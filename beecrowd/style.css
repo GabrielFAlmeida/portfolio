@@ -94,13 +94,8 @@ a {
   top: 28%;
   right: 2%;
 }
-select:-internal-list-box option:hover{
-  background-color: var(--primary-cyan);
-  color: var(--primary-black);
-}
 .custom-problem-select select option:checked {
-  background-color: var(--secondary-roxul);
-  color: var(--primary-white);
+  color: var(--secondary-roxul);
 }
 .custom-problem-select select:focus + span::after{
     animation: rotation180 1s ease-in 1 forwards;
