@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- <script src="./problem-chooser.js" defer type="module"></script>!-->
+    <title>Resolução -Beecrowd</title>
+  </head>
+  <body>
+    <header class="header-container">
+      <nav>Gabriel</nav>
+    </header>
+    <div class="content-wrapper">
+      <div class="form-content-container">
+        <h1>Resolução de exercícios - Beecrowd</h1>
+        <div class="problem-container">
+          <label for="problem">⚙️Problema: </label>
+          <select name="problem" id="problem" class="problem">
+            <option value="" disabled selected>
+              Selecione o problema que deseja resolver.
+            </option>
+            <option value="1000">1000</option>
+            <option value="1001">1001</option>
+            <option value="1002">1002</option>
+            <option value="1003">1003</option>
+            <option value="1004">1004</option>
+            <option value="1005">1005</option>
+          </select>
+        </div>
+
+        <div class="input-container">
+          <label for="">✍🏻Entradas:</label>
+          <textarea
+            class="input"
+            id="input"
+            placeholder="Dados necessários para a resolução do problema, separados por linha."
+          ></textarea>
+        </div>
+
+        <button type="button" class="solve" id="solve">Resolver</button>
+      </div>
+
+      <footer class="footer-container">
+        <img
+          class="brand-logo"
+          src="./assets/icons/gabriel_franca_logo.png"
+          alt="Logo - Gabriel França"
+        />
+        <p>&copy</p>
+        <a href="https://www.linkedin.com/in/gabriel-frnca/" target="_blank"
+          >Gabriel França</a
+        >
+        <p>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

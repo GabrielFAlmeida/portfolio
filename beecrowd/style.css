@@ -1,0 +1,114 @@
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-blue: #5b4cf3;
+  --secondary-blue: #d9ecff;
+  --terceary-blue: #e9f2fb;
+  --primary-purple: #81599f;
+  --primary-roxul: #7d6ef2;
+  --secondary-roxul: #897efa;
+  --terceary-roxul: #9a8fec;
+  --quartenary-roxul: #d3cff4;
+  --quinary-roxul: #c7c2ff;
+  --primary-white: #fcfcfc;
+  --primary-black: #1b1b1b;
+  --secondary-black: #11111a1a;
+  --primary-gray: #716a6a;
+}
+body {
+  height: 100vh;
+  background-color: var(--quartenary-roxul);
+}
+a {
+  color: var(--terceary-blue);
+}
+.content-wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-content-container {
+  width: 60vw;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--primary-white);
+  border: 0.1rem solid var(--primary-blue);
+  border-radius: 2rem;
+  box-shadow: var(--secondary-black) 0rem 0.25rem 1rem,
+    var(--secondary-black) 0rem 0.5rem 2rem;
+}
+.form-content-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.03rem;
+  color: var(--primary-blue);
+}
+.form-content-container label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-black);
+  margin-bottom: 0.5rem;
+}
+.problem-container {
+  display: flex;
+  flex-direction: column;
+}
+.problem {
+  padding: 0.25rem 0.75rem;
+  font-size: 1rem;
+  color: var(--primary-gray);
+  border: 0.1rem solid var(--secondary-black);
+  border-radius: 1rem;
+  height: 3rem;
+}
+.input-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: var(--primary-gray);
+  resize: none;
+  outline: none;
+  height: 9rem;
+  border: 0.1rem solid var(--secondary-black);
+  border-radius: 1rem;
+}
+.solve {
+  height: 3rem;
+  background-color: var(--primary-purple);
+  color: var(--terceary-blue);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 1rem;
+}
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 2rem 6rem;
+  background-color: var(--primary-blue);
+}
+.footer-container a,
+p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1rem;
+  color: var(--quinary-roxul);
+}
+.brand-logo {
+  width: 2rem;
+  margin-right: 0.4rem;
+}
