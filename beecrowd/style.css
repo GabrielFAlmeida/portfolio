@@ -1,3 +1,4 @@
+/* Configuration */
 * {
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -8,7 +9,10 @@
   --primary-blue: #5b4cf3;
   --secondary-blue: #d9ecff;
   --terceary-blue: #e9f2fb;
+  --primary-cyan: #3cd4d9;
+  --secondary-cyan: #a4e9eb;
   --primary-purple: #81599f;
+  --secondary-purple: #a87bcb;
   --primary-roxul: #7d6ef2;
   --secondary-roxul: #897efa;
   --terceary-roxul: #9a8fec;
@@ -19,6 +23,8 @@
   --secondary-black: #11111a1a;
   --primary-gray: #716a6a;
 }
+
+/* General */
 body {
   height: 100vh;
   background-color: var(--quartenary-roxul);
@@ -32,6 +38,8 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
+
+/* Form container */
 .form-content-container {
   width: 60vw;
   padding: 2rem;
@@ -48,6 +56,7 @@ a {
 .form-content-container h1 {
   font-size: 2rem;
   font-weight: 700;
+  text-align: center;
   letter-spacing: 0.03rem;
   color: var(--primary-blue);
 }
@@ -57,21 +66,50 @@ a {
   color: var(--primary-black);
   margin-bottom: 0.5rem;
 }
+
+/* Problem container */
 .problem-container {
   display: flex;
   flex-direction: column;
 }
-.problem {
+.custom-problem-select {
+  position: relative;
+}
+.custom-problem-select select {
+  appearance: none;
+  width: 100%;
+  position: relative;
   padding: 0.25rem 0.75rem;
   font-size: 1rem;
   color: var(--primary-gray);
   border: 0.1rem solid var(--secondary-black);
   border-radius: 1rem;
   height: 3rem;
+  cursor: pointer;
 }
+.custom-problem-select span::after {
+  content: "⬇️";
+  position: absolute;
+  pointer-events: none;
+  top: 28%;
+  right: 2%;
+}
+select:-internal-list-box option:hover{
+  background-color: var(--primary-cyan);
+  color: var(--primary-black);
+}
+.custom-problem-select select option:checked {
+  background-color: var(--secondary-roxul);
+  color: var(--primary-white);
+}
+.custom-problem-select select:focus + span::after{
+    animation: rotation180 1s ease-in 1 forwards;
+}
+
+/* Input container */
 .input-container {
-  display: grid;
-  grid-template-rows: auto 1fr;
+  display: flex;
+  flex-direction: column;
 }
 .input {
   padding: 0.75rem;
@@ -83,6 +121,15 @@ a {
   border: 0.1rem solid var(--secondary-black);
   border-radius: 1rem;
 }
+.input:focus,
+.input:focus-visible,
+.custom-problem-select select:focus,
+.custom-problem-select select:focus-visible {
+  outline: none;
+  border: 0.1rem solid var(--secondary-purple);
+}
+
+/* Button container */
 .solve {
   height: 3rem;
   background-color: var(--primary-purple);
@@ -93,11 +140,19 @@ a {
   border: none;
   border-radius: 1rem;
 }
+.solve:focus,
+.solve:hover {
+  outline: none;
+  background-color: var(--secondary-purple);
+}
+
+/* Footer container */
 .footer-container {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 0.2rem;
+  margin-top: 2rem;
   padding: 2rem 6rem;
   background-color: var(--primary-blue);
 }
@@ -111,4 +166,41 @@ p {
 .brand-logo {
   width: 2rem;
   margin-right: 0.4rem;
+}
+
+/*Animations*/
+@keyframes rotation180 {
+    0% {transform: rotate(0deg);}
+    3.125% {transform: rotate(5.625deg);}
+    6.25% {transform: rotate(11.25deg);}
+    9.375% {transform: rotate(16.875deg);}
+    12.5% {transform: rotate(22.5deg);}
+    15.625% {transform: rotate(28.125deg);}
+    18.75% {transform: rotate(33.75deg);}
+    21.875% {transform: rotate(39.375deg);}
+    25% {transform: rotate(45deg);}
+    28.125% {transform: rotate(50.625deg);}
+    31.25% {transform: rotate(56.25deg);}
+    34.375% {transform: rotate(61.875deg);}
+    37.5% {transform: rotate(67.5deg);}
+    40.625% {transform: rotate(73.125deg);}
+    43.75% {transform: rotate(78.75deg);}
+    46.875% {transform: rotate(84.375deg);}
+    50% {transform: rotate(90deg);}
+    53.125% {transform: rotate(95.625deg);}
+    56.25% {transform: rotate(101.25deg);}
+    59.375% {transform: rotate(106.875deg);}
+    62.5% {transform: rotate(112.5deg);}
+    65.625% {transform: rotate(118.125deg);}
+    68.75% {transform: rotate(123.75deg);}
+    71.875% {transform: rotate(129.375deg);}
+    75% {transform: rotate(135deg);}
+    78.125% {transform: rotate(140.625deg);}
+    81.25% {transform: rotate(146.25deg);}
+    84.375% {transform: rotate(151.875deg);}
+    87.5% {transform: rotate(157.5deg);}
+    90.625% {transform: rotate(163.125deg);}
+    93.75% {transform: rotate(168.75deg);}
+    96.875% {transform: rotate(174.375deg);}
+    100% {transform: rotate(180deg);}
 }
