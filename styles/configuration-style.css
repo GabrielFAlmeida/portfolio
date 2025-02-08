@@ -1,0 +1,26 @@
+/* Configuration */
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-blue: #490de4;
+  --secondary-blue: #5b4cf3;
+  --terceary-blue: #d9ecff;
+  --quartery-blue: #e9f2fb;
+  --primary-cyan: #3cd4d9;
+  --secondary-cyan: #a4e9eb;
+  --primary-purple: #81599f;
+  --secondary-purple: #a87bcb;
+  --primary-roxul: #7d6ef2;
+  --secondary-roxul: #897efa;
+  --terceary-roxul: #9a8fec;
+  --quartenary-roxul: #d3cff4;
+  --quinary-roxul: #c7c2ff;
+  --primary-white: #fcfcfc;
+  --primary-black: #1b1b1b;
+  --secondary-black: #11111a1a;
+  --primary-gray: #716a6a;
+}
