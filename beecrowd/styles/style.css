@@ -129,24 +129,3 @@ a {
   outline: none;
   background-color: var(--secondary-purple);
 }
-
-/* Footer container */
-.footer-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.2rem;
-  padding: 2rem 6rem;
-  background-color: var(--primary-blue);
-}
-.footer-container a,
-p {
-  font-size: 0.8rem;
-  font-weight: 600;
-  line-height: 1rem;
-  color: var(--quinary-roxul);
-}
-.brand-logo {
-  width: 2rem;
-  margin-right: 0.4rem;
-}

@@ -103,7 +103,7 @@
 
 @keyframes surge-and-rotate {
   from {
-    opacity: 0.01;
+    opacity: 0.08;
     scale: 75% 75%;
     transform: rotate(10deg);
   }
