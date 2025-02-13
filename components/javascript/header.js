@@ -22,11 +22,18 @@ class Header extends HTMLElement {
         .nav-list {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
+          align-items: center;
+          gap: 0.8rem;
           list-style-type: none;
-          gap: 0.5rem;
         }
         .nav-list-image {
           width: 2rem;
+          opacity: 0.8;
+        }
+        .nav-list-image:hover {
+          opacity: 0.7;
+          animation: grow 0.2s ease-in 1 forwards;
         }
       </style>
       <header class="header-container">
