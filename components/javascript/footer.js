@@ -20,7 +20,7 @@ class Footer extends HTMLElement {
           font-size: 0.8rem;
           font-weight: 600;
           line-height: 1rem;
-          color: var(--quinary-roxul);
+          color: var(--terceary-blue);
         }
         .brand-logo {
           width: 2rem;

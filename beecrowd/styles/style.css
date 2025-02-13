@@ -1,10 +1,7 @@
-@import url("./../styles/configuration-style.css");
-@import url("./../styles/animations.css");
-
 /* General */
 body {
   height: 100vh;
-  background-color: var(--quartenary-roxul);
+  background-color: var(--primary-blue);
 }
 a {
   color: var(--terceary-blue);
@@ -15,19 +12,6 @@ a {
   flex-direction: column;
   justify-content: space-between;
 }
-/* Nav container */
-.nav-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 6rem;
-  background-color: var(--primary-blue);
-}
-.nav-image {
-  width: 4rem;
-  border-radius: 90px;
-}
 /* Form container */
 .form-content-container {
   width: 60vw;
@@ -37,7 +21,7 @@ a {
   flex-direction: column;
   gap: 2rem;
   background-color: var(--primary-white);
-  border: 0.1rem solid var(--primary-blue);
+  border: 0.1rem solid var(--primary-cyan);
   border-radius: 2rem;
   box-shadow: var(--secondary-black) 0rem 0.25rem 1rem,
     var(--secondary-black) 0rem 0.5rem 2rem;
