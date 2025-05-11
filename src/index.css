@@ -11,6 +11,15 @@
   --breakpoint-lg: 1200px;
   --breakpoint-xl: 1700px;
 
+  /* FONT */
+  --font-poppins: 'Poppins', sans-serif;
+  --font-montserrat: 'Montserrat', sans-serif;
+
+  /* FONT SIZES */
+  --text-5.25xl: 3.25rem;
+
+  /* LEADINGS */
+
   /* COLORS */
   --color-utils-white-100: #ffffff;
   --color-utils-white-200: #f8f8f8;
@@ -43,11 +52,23 @@
   --color-main-purplue-500: #eae9f5;
 
   /* HEIGHTS */
-  --height-200%: 200%;
-  --height-400%: 400%;
+
+  /* WIDTHS */
+  --width-1/2vw: 50vw;
+  --width-1/2vh: 50vh;
+
+  --width-60%: 60%;
+
+  /* MAX WIDTHS */
+  --max-width-1/3vw: 33vw;
+
+  /* MIN WIDTHS */
+  --min-width-1/3vw: 33vw;
+
+  --min-width-1/2vw: 50vw;
+  --min-width-1/2vh: 50vh;
 
   /* SIZES */
-  --size-100%: 100%;
   --size-1/2vw: 50vw;
   --size-1/2vh: 50vh;
 
@@ -55,10 +76,6 @@
   --spacing-32: 8rem;
   --spacing-64: 16rem;
   --spacing-128: 32rem;
-
-  /* FONT */
-  --font-poppins: 'Poppins', sans-serif;
-  --font-montserrat: 'Montserrat', sans-serif;
 
   /* BACKGROUND IMAGES */
   --background-image-ondulation: url('./assets/svg/ondulation.svg');
