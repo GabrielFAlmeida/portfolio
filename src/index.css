@@ -1,10 +1,9 @@
 @import "tailwindcss";
-@import "tailwindcss/preflight";
 @tailwind utilities;
 
+/* Theme */
 @theme {
   /* BREAKPOINTS */
-
   --breakpoint-xs: 480px;
   --breakpoint-ss: 620px;
   --breakpoint-sm: 768px;
@@ -32,6 +31,7 @@
   --color-main-blue-200: #5b4cf3;
   --color-main-blue-300: #d9ecff;
   --color-main-blue-400: #e9f2fb;
+  --color-main-blue-500: #d9ecff;
 
   --color-main-cyan-100: #3cd4d9;
   --color-main-cyan-200: #a4e9eb;
@@ -41,6 +41,15 @@
   --color-main-purplue-300: #9a8fec;
   --color-main-purplue-400: #d3cff4;
   --color-main-purplue-500: #eae9f5;
+
+  /* HEIGHTS */
+  --height-200%: 200%;
+  --height-400%: 400%;
+
+  /* SIZES */
+  --size-100%: 100%;
+  --size-1/2vw: 50vw;
+  --size-1/2vh: 50vh;
 
   /* SPACING */
   --spacing-32: 8rem;
@@ -52,15 +61,16 @@
   --font-montserrat: 'Montserrat', sans-serif;
 
   /* BACKGROUND IMAGES */
-  --background-image-ondulation: url('./assets/ondulation.svg');
+  --background-image-ondulation: url('./assets/svg/ondulation.svg');
+
+  /* BACKGROUND SIZES */
+  --background-size-80%: 80%;
 }
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
 
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
