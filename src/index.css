@@ -12,8 +12,8 @@
   --breakpoint-xl: 1700px;
 
   /* FONT */
-  --font-poppins: 'Poppins', sans-serif;
-  --font-montserrat: 'Montserrat', sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
 
   /* FONT SIZES */
   --text-5.25xl: 3.25rem;
@@ -78,10 +78,26 @@
   --spacing-128: 32rem;
 
   /* BACKGROUND IMAGES */
-  --background-image-ondulation: url('./assets/svg/ondulation.svg');
+  --background-image-ondulation: url("./assets/svg/ondulation.svg");
 
   /* BACKGROUND SIZES */
   --background-size-80%: 80%;
+
+  /* ANIMATIONS */
+  --animate-surge-and-rotate: surge-and-rotate 3s ease 1 forwards;
+  
+  @keyframes surge-and-rotate {
+    from {
+      opacity: 0.08;
+      scale: 75% 75%;
+      transform: rotate(10deg);
+    }
+
+    to {
+      opacity: 1;
+      scale: 100% 100%;
+    }
+  }
 }
 
 :root {
