@@ -77,6 +77,9 @@
   --spacing-64: 16rem;
   --spacing-128: 32rem;
 
+  /* Z-INDEXES */
+  --z-index-999: 999;
+
   /* BACKGROUND IMAGES */
   --background-image-ondulation: url("./assets/svg/ondulation.svg");
 
