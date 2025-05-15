@@ -2,7 +2,7 @@ import Memoji from "../assets/svg/memoji.svg?react";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen flex flex-row justify-center items-center bg-main-blue-100 bg-ondulation bg-[size:80%] bg-position-[-160%_40%] bg-no-repeat bg-blend-hard-light">
+    <div className="w-screen h-fit min-h-screen flex flex-row justify-center items-center bg-main-blue-100 bg-ondulation bg-[size:80%] bg-position-[-160%_40%] bg-no-repeat bg-blend-hard-light">
       <div className="flex flex-col justify-center items-center max-w-3/4 md:flex-row md:items-center">
         <div className="flex justify-center items-center animate-surge-and-rotate mb-4 p-4 rounded-full bg-main-blue-500 md:w-1/2vh md:mb-0 md:mr-8">
           <Memoji />
