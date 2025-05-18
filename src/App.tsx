@@ -1,25 +1,23 @@
-import './App.css';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
-import Header from './components/header/Header';
-import Scroll from './components/scroll/Scroll';
+import { createBrowserRouter, RouterProvider } from "react-router";
 
-import { createBrowserRouter, RouterProvider } from 'react-router';
+import { childrenRoutes } from "./constants/childrenRoutes";
 
+import PageLayout from "./layouts/PageLayout";
+
+import NotFound from "./pages/NotFound";
+
+import "./App.css";
 
 const router = createBrowserRouter([
   {
-  path: '/',
-  element: <Home />,
-  errorElement: <NotFound/>,
+    path: "/",
+    element: <PageLayout />,
+    children: childrenRoutes,
+    errorElement: <NotFound />,
   },
 ]);
 
 function App() {
-  return (
-    <div className="relative">
-      <RouterProvider router={router} />
-    </div>
-  )
+  return <RouterProvider router={router} />;
 }
-export default App
+export default App;

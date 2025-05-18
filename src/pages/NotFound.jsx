@@ -1,6 +1,6 @@
-import { ExclamationCircleIcon } from "@heroicons/react/24/solid";
-
 import { Link } from "react-router";
+
+import { ExclamationCircleIcon } from "@heroicons/react/24/solid";
 
 export default function NotFound() {
   return (
