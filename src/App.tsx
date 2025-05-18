@@ -1,6 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 
-import { childrenRoutes } from "./constants/childrenRoutes";
+import { childrenRoutes } from "./utils/childrenRoutes";
 
 import PageLayout from "./layouts/PageLayout";
 

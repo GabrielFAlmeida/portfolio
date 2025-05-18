@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-import { childrenRoutesWithId } from "../../constants/childrenRoutes";
+import { childrenRoutesWithId } from "../../utils/childrenRoutes";
 
 export default function HeaderListRoute() {
   return childrenRoutesWithId.map((route) => (
