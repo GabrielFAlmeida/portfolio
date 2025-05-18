@@ -1,4 +1,5 @@
 import Home from "./../pages/Home";
+import Projects from "../pages/Projects";
 
 const pages = [
   { id: 1, title: "Bem-vindo", path: "/", next: 2 },
@@ -12,7 +13,7 @@ const componentMap: Record<string, React.ReactNode> = {
   "/": <Home />,
   "/sobre": <Home />,
   "/trajetoria": <Home />,
-  "/projetos": <Home />,
+  "/projetos": <Projects />,
   "/contato": <Home />,
 };
 
