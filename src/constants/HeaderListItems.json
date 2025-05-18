@@ -2,26 +2,31 @@
   {
     "id": 1,
     "title": "Bem-vindo",
-    "link": "/"
+    "link": "/",
+    "next": 2
   },
   {
     "id": 2,
     "title": "Sobre mim",
-    "link": "/sobre"
+    "link": "/sobre",
+    "next": 3
   },
   {
     "id": 3,
     "title": "Trajetória",
-    "link": "/trajetoria"
+    "link": "/trajetoria",
+    "next": 4
   },
   {
     "id": 4,
     "title": "Projetos",
-    "link": "/projetos"
+    "link": "/projetos",
+    "next": 5
   },
   {
     "id": 5,
     "title": "Contato",
-    "link": "/contato"
+    "link": "/contato",
+    "next": null
   }
 ]
