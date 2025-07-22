@@ -6,7 +6,7 @@ import Logo from "../../assets/svg/logo.svg?react";
 
 export default function Header() {
   return (
-    <header className="w-screen h-fit fixed top-0 flex flex-row justify-between items-center px-16 py-4 z-999 bg-transparent">
+    <header className="w-full h-fit absolute top-0 flex flex-row justify-between items-center px-10 py-4 z-999 bg-transparent">
       <Logo className="size-20" />
       <HeaderList />
       <div className="md:hidden flex flex-col justify-center items-center">
