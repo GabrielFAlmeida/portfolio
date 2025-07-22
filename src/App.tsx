@@ -17,6 +17,8 @@ const router = createBrowserRouter([
   },
 ]);
 
+console.log("Router initialized with routes:", childrenRoutes);
+
 function App() {
   return <RouterProvider router={router} />;
 }

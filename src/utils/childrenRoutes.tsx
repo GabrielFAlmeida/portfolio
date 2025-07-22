@@ -1,6 +1,6 @@
 import { PageRoute } from "../classes/PageRoute";
 
-import rawPageRoutes from "./../constants/pages";
+import { rawPageRoutes } from "./../constants/pages";
 
 const pages: PageRoute[] = rawPageRoutes.map(
   (page) =>
@@ -16,10 +16,10 @@ const childrenRoutes = pages.map((page) => ({
 const childrenRoutesWithId = pages.map((page) => ({
   id: page.id,
   title: page.title,
-  path: page.path === "/" ? "" : page.path.replace("/", ""),
+  path: page.path,
   index: page.path === "/",
   element: page.element,
-  next: page.getNext(page.path),
+  nextId: page.getNext(page.path),
 }));
 
 export { childrenRoutes, childrenRoutesWithId };

@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <div className="relative">
       <Header />
-      <Outlet />
+      <Outlet/>
       <Scroll />
     </div>
   );

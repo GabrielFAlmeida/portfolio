@@ -1,6 +1,6 @@
 import type { PageRouteInterface } from "../interfaces/PageRouteInterface";
  
-import rawPageRoutes from "../constants/pages";
+import { rawPageRoutes } from "../constants/pages";
 
 export class PageRoute implements PageRouteInterface {
   id: number;
@@ -15,11 +15,6 @@ export class PageRoute implements PageRouteInterface {
     this.element = element; 
     this.path = path;
     this.nextId = nextId;
-  }
-
-  // Método que verifica se é a última página
-  isLast(): boolean {
-    return this.nextId === null;
   }
 
   // Método que retorna o nome amigável para a rota
