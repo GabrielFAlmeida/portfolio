@@ -3,5 +3,4 @@ export interface PageRouteInterface {
   title: string;
   element: React.ReactNode;
   path: string;
-  nextId: number | null;
 }

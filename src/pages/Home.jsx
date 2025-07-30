@@ -4,5 +4,6 @@ import Memoji from "../assets/svg/memoji.svg?react";
 export default function Home() {
   return (
     <Welcome />
+    
   );
 }
